@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão de Avaliação de Entrevista de Desenvolvedor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="header-icon">
+                    <img src="icons/icon.svg" alt="WINSVUE Development Logo" class="company-logo-icon">
+                </div>
+                <div class="header-text">
+                    <h1>Cartão de Avaliação de Entrevista de Desenvolvedor</h1>
+                    <p>Ferramenta abrangente de avaliação para entrevistas de código</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="candidate-info">
+            <h2>Informações do Candidato</h2>
+            <div class="form-group">
+                <label for="candidateName">Nome do Candidato:</label>
+                <input type="text" id="candidateName" placeholder="Digite o nome do candidato">
+            </div>
+            <div class="form-group">
+                <label for="interviewDate">Data da Entrevista:</label>
+                <input type="date" id="interviewDate">
+            </div>
+            <div class="form-group">
+                <label for="position">Cargo:</label>
+                <input type="text" id="position" placeholder="ex: Desenvolvedor Frontend Sênior">
+            </div>
+            <div class="form-group">
+                <label for="interviewer">Entrevistador:</label>
+                <input type="text" id="interviewer" placeholder="Seu nome">
+            </div>
+        </div>
+
+        <div class="scoring-section">
+            <h2>Avaliação Técnica</h2>
+            
+            <div class="category">
+                <h3>Qualidade do Código e Boas Práticas</h3>
+                <div class="criteria-grid">
+                    <div class="criteria-item">
+                        <label>
+                            <input type="checkbox" data-category="code-quality" data-weight="3">
+                            <span class="checkmark"></span>
+                            Estrutura de código limpa e legível
+                        </label>
+                    </div>
+                    <div class="criteria-item">
+                        <label>
+                            <input type="checkbox" data-category="code-quality" data-weight="3">
+                            <span class="checkmark"></span>
+                            Convenções de nomenclatura adequadas
+                        </label>
+                    </div>
+                    <div class="criteria-item">
+                        <label>
+                            <input type="checkbox" data-category="code-quality" data-weight="2">
+                            <span class="checkmark"></span>
+                            Formatação de código consistente
+                        </label>
+                    </div>
+                    <div class="criteria-item">
+                        <label>
+                            <input type="checkbox" data-category="code-quality" data-weight="3">
+                            <span class="checkmark"></span>
+                            Implementação do princípio DRY
+                        </label>
+                    </div>
+                    <div class="criteria-item">
+                        <label>
+                            <input type="checkbox" data-category="code-quality" data-weight="2">
+                            <span class="checkmark"></span>
+                            Comentários e documentação significativos
+                        </label>
+                    </div>
+                    <div class="criteria-item">
+                        <label>
+                            <input type="checkbox" data-category="code-quality" data-weight="3">
+                            <span class="checkmark"></span>
+                            Implementação de tratamento de erros
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category">
+                <h3>Arquitetura e Design</h3>
+                <div class="criteria-grid">
+                    <div class="criteria-item">
+                        <label>
+                            <input type="checkbox" data-category="architecture" data-weight="4">
+                            <span class="checkmark"></span>
+                            Componentização/modularização adequada
+                        </label>
+                    </div>
+                    <div class="criteria-item">
+                        <label>
+                            <input type="checkbox" data-category="architecture" data-weight="3">
+                            <span class="checkmark"></span>
+                            Separação de responsabilidades
+                        </label>
+                    </div>
+                    <div class="criteria-item">
+                        <label>
+                            <input type="checkbox" data-category="architecture" data-weight="3">
+                            <span class="checkmark"></span>
+                            Design de arquitetura escalável
+                        </label>
+                    </div>
+                    <div class="criteria-item">
+                        <label>
+                            <input type="checkbox" data-category="architecture" data-weight="2">
+                            <span class="checkmark"></span>
+                            Uso de padrões de design
+                        </label>
+                    </div>
+                    <div class="criteria-item">
+                        <label>
+                            <input type="checkbox" data-category="architecture" data-weight="3">
+                            <span class="checkmark"></span>
+                            Gerenciamento de fluxo de dados
+                        </label>
+                    </div>
+                    <div class="criteria-item">
+                        <label>
+                            <input type="checkbox" data-category="architecture" data-weight="2">
+                            <span class="checkmark"></span>
+                            Abordagem de gerenciamento de estado
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category">
+                <h3>Resolução de Problemas e Lógica</h3>
+                <div class="criteria-grid">
+                    <div class="criteria-item">
+                        <label>
+                            <input type="checkbox" data-category="problem-solving" data-weight="4">
+                            <span class="checkmark"></span>
+                            Implementação eficiente de algoritmos
+                        </label>
+                    </div>
+                    <div class="criteria-item">
+                        <label>
+                            <input type="checkbox" data-category="problem-solving" data-weight="3">
+                            <span class="checkmark"></span>
+                            Consideração de complexidade temporal
+                        </label>
+                    </div>
+                    <div class="criteria-item">
+                        <label>
+                            <input type="checkbox" data-category="problem-solving" data-weight="3">
+                            <span class="checkmark"></span>
+                            Otimização de complexidade espacial
+                        </label>
+                    </div>
+                    <div class="criteria-item">
+                        <label>
+                            <input type="checkbox" data-category="problem-solving" data-weight="2">
+                            <span class="checkmark"></span>
+                            Tratamento de casos extremos
+                        </label>
+                    </div>
+                    <div class="criteria-item">
+                        <label>
+                            <input type="checkbox" data-category="problem-solving" data-weight="3">
+                            <span class="checkmark"></span>
+                            Processo de pensamento lógico
+                        </label>
+                    </div>
+                    <div class="criteria-item">
+                        <label>
+                            <input type="checkbox" data-category="problem-solving" data-weight="2">
+                            <span class="checkmark"></span>
+                            Demonstração de habilidades de depuração
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category">
+                <h3>Conhecimento Técnico</h3>
+                <div class="criteria-grid">
+                    <div class="criteria-item">
+                        <label>
+                            <input type="checkbox" data-category="technical" data-weight="3">
+                            <span class="checkmark"></span>
+                            Boas práticas específicas da linguagem
+                        </label>
+                    </div>
+                    <div class="criteria-item">
+                        <label>
+                            <input type="checkbox" data-category="technical" data-weight="3">
+                            <span class="checkmark"></span>
+                            Conhecimento de frameworks/bibliotecas
+                        </label>
+                    </div>
+                    <div class="criteria-item">
+                        <label>
+                            <input type="checkbox" data-category="technical" data-weight="2">
+                            <span class="checkmark"></span>
+                            Proficiência em controle de versão
+                        </label>
+                    </div>
+                    <div class="criteria-item">
+                        <label>
+                            <input type="checkbox" data-category="technical" data-weight="2">
+                            <span class="checkmark"></span>
+                            Compreensão de abordagem de testes
+                        </label>
+                    </div>
+                    <div class="criteria-item">
+                        <label>
+                            <input type="checkbox" data-category="technical" data-weight="3">
+                            <span class="checkmark"></span>
+                            Considerações de segurança
+                        </label>
+                    </div>
+                    <div class="criteria-item">
+                        <label>
+                            <input type="checkbox" data-category="technical" data-weight="2">
+                            <span class="checkmark"></span>
+                            Consciência de otimização de performance
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category">
+                <h3>Comunicação e Colaboração</h3>
+                <div class="criteria-grid">
+                    <div class="criteria-item">
+                        <label>
+                            <input type="checkbox" data-category="communication" data-weight="2">
+                            <span class="checkmark"></span>
+                            Explicação clara da abordagem
+                        </label>
+                    </div>
+                    <div class="criteria-item">
+                        <label>
+                            <input type="checkbox" data-category="communication" data-weight="2">
+                            <span class="checkmark"></span>
+                            Perguntas feitas para esclarecimento
+                        </label>
+                    </div>
+                    <div class="criteria-item">
+                        <label>
+                            <input type="checkbox" data-category="communication" data-weight="2">
+                            <span class="checkmark"></span>
+                            Capacidade de apresentar o código
+                        </label>
+                    </div>
+                    <div class="criteria-item">
+                        <label>
+                            <input type="checkbox" data-category="communication" data-weight="2">
+                            <span class="checkmark"></span>
+                            Receptivo ao feedback
+                        </label>
+                    </div>
+                    <div class="criteria-item">
+                        <label>
+                            <input type="checkbox" data-category="communication" data-weight="2">
+                            <span class="checkmark"></span>
+                            Resolução colaborativa de problemas
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="additional-notes">
+            <h3>Notas Adicionais</h3>
+            <textarea id="notes" placeholder="Adicione observações adicionais, pontos fortes ou áreas de melhoria..."></textarea>
+        </div>
+
+        <div class="score-display">
+            <div class="score-summary">
+                <h3>Resumo da Pontuação</h3>
+                <div class="score-breakdown">
+                    <div class="score-item">
+                        <span>Qualidade do Código:</span>
+                        <span id="codeQualityScore">0/16</span>
+                    </div>
+                    <div class="score-item">
+                        <span>Arquitetura:</span>
+                        <span id="architectureScore">0/17</span>
+                    </div>
+                    <div class="score-item">
+                        <span>Resolução de Problemas:</span>
+                        <span id="problemSolvingScore">0/17</span>
+                    </div>
+                    <div class="score-item">
+                        <span>Conhecimento Técnico:</span>
+                        <span id="technicalScore">0/15</span>
+                    </div>
+                    <div class="score-item">
+                        <span>Comunicação:</span>
+                        <span id="communicationScore">0/10</span>
+                    </div>
+                </div>
+                <div class="total-score">
+                    <h4>Pontuação Total: <span id="totalScore">0</span>/<span id="maxScore">75</span></h4>
+                    <div class="percentage">
+                        <span id="percentage">0%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button id="saveScore" class="btn btn-primary">Salvar Pontuação</button>
+            <button id="loadScores" class="btn btn-secondary">Carregar Pontuações Anteriores</button>
+            <button id="clearForm" class="btn btn-danger">Limpar Formulário</button>
+            <button id="exportScore" class="btn btn-success">Exportar Pontuação</button>
+            <button id="importScore" class="btn btn-info">Importar Pontuação</button>
+            <input type="file" id="importFile" accept=".json" style="display: none;">
+        </div>
+
+        <div id="savedScores" class="saved-scores" style="display: none;">
+            <h3>Pontuações Anteriores</h3>
+            <div id="scoresList"></div>
+        </div>
+    </div>
+
+    <!-- Company Signature -->
+    <footer class="company-signature">
+        <div class="signature-content">
+            <div class="company-logo">
+                <h2>WINSVUE DEVELOPMENT</h2>
+                <p>Desenvolvimento de Software de Excelência</p>
+            </div>
+            <div class="company-info">
+                <p>© 2024 WINSVUE DEVELOPMENT. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
