@@ -46,7 +46,10 @@ export const CONFIG = {
     UI: {
         MESSAGE_DISPLAY_DURATION: 5000,
         ANIMATION_DURATION: 300,
-        DEBOUNCE_DELAY: 300
+        DEBOUNCE_DELAY: 300,
+        AUTO_SAVE: true,
+        AUTO_SAVE_INTERVAL: 30000,
+        AUTO_LOAD_FORM_DATA: false // Changed to false to prevent unwanted checkbox persistence
     },
     
     // File settings

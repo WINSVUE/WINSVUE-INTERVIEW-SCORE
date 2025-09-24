@@ -37,8 +37,13 @@ export class InterviewScoreCardApp {
             // Setup event listeners
             this.setupEventListeners();
             
-            // Load saved form data
-            this.loadFormData();
+            // Load saved form data only if auto-load is enabled
+            if (CONFIG.UI.AUTO_LOAD_FORM_DATA) {
+                this.loadFormData();
+            } else {
+                // Start with a clean form
+                this.initializeCleanForm();
+            }
             
             // Set current date
             this.uiManager.setCurrentDate();
@@ -90,6 +95,7 @@ export class InterviewScoreCardApp {
         const buttons = {
             'saveScore': () => this.saveScore(),
             'loadScores': () => this.loadScores(),
+            'loadFormData': () => this.loadSavedFormData(),
             'clearForm': () => this.clearForm(),
             'exportScore': () => this.exportScore(),
             'importScore': () => this.triggerImport()
@@ -141,6 +147,7 @@ export class InterviewScoreCardApp {
         const tooltips = {
             'saveScore': PT_STRINGS.SAVE_TOOLTIP,
             'loadScores': PT_STRINGS.LOAD_TOOLTIP,
+            'loadFormData': 'Restaurar dados do formulário salvos automaticamente',
             'clearForm': PT_STRINGS.CLEAR_TOOLTIP,
             'exportScore': PT_STRINGS.EXPORT_TOOLTIP,
             'importScore': PT_STRINGS.IMPORT_TOOLTIP
@@ -190,6 +197,33 @@ export class InterviewScoreCardApp {
             StorageService.saveFormData(formData);
         } catch (error) {
             console.error('Error saving form data:', error);
+        }
+    }
+    
+    /**
+     * Initialize form with clean state
+     */
+    initializeCleanForm() {
+        try {
+            // Clear all form fields
+            this.uiManager.setFieldValue('candidateName', '');
+            this.uiManager.setFieldValue('interviewDate', '');
+            this.uiManager.setFieldValue('position', '');
+            this.uiManager.setFieldValue('interviewer', '');
+            this.uiManager.setFieldValue('notes', '');
+            
+            // Clear all checkboxes
+            this.uiManager.clearAllCheckboxes();
+            
+            // Reset scores
+            this.scoreManager.resetScores();
+            
+            // Clear any saved form data to prevent confusion
+            StorageService.clearFormData();
+            
+            console.log('Form initialized with clean state');
+        } catch (error) {
+            console.error('Error initializing clean form:', error);
         }
     }
     
@@ -277,6 +311,24 @@ export class InterviewScoreCardApp {
         } catch (error) {
             console.error('Error saving score:', error);
             this.uiManager.showMessage(ERROR_MESSAGES.OPERATION_FAILED, 'error');
+        }
+    }
+    
+    /**
+     * Load saved form data manually (when user explicitly requests it)
+     */
+    loadSavedFormData() {
+        try {
+            const savedData = StorageService.loadFormData();
+            if (savedData) {
+                this.loadFormData();
+                this.uiManager.showMessage('Dados do formulário restaurados com sucesso', 'success');
+            } else {
+                this.uiManager.showMessage('Nenhum dado salvo encontrado', 'info');
+            }
+        } catch (error) {
+            console.error('Error loading saved form data:', error);
+            this.uiManager.showMessage('Erro ao carregar dados salvos', 'error');
         }
     }
     
