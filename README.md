@@ -1,5 +1,11 @@
 # Cartão de Avaliação de Entrevista de Desenvolvedor
 
+<p align="center">
+	<img src="https://img.shields.io/github/last-commit/York-Lucis/WINSVUE-INTERVIEW-SCORE?style=default&logo=git&logoColor=white&color=0080ff" alt="last-commit">
+	<img src="https://img.shields.io/github/languages/top/York-Lucis/WINSVUE-INTERVIEW-SCORE?style=default&color=0080ff" alt="repo-top-language">
+	<img src="https://img.shields.io/github/languages/count/York-Lucis/WINSVUE-INTERVIEW-SCORE?style=default&color=0080ff" alt="repo-language-count">
+</p>
+
 ## 📋 Visão Geral
 
 O **Cartão de Avaliação de Entrevista de Desenvolvedor** é uma ferramenta web abrangente desenvolvida para facilitar e padronizar o processo de avaliação de candidatos em entrevistas técnicas de desenvolvimento de software. A aplicação permite que entrevistadores avaliem candidatos de forma estruturada e objetiva, fornecendo uma pontuação detalhada em diferentes categorias técnicas.
@@ -237,6 +243,15 @@ Para contribuir com o projeto:
 3. **Commit** suas mudanças
 4. **Push** para a branch
 5. **Abra** um Pull Request
+
+<summary>Gráfico de Contribuidores</summary>
+<br>
+<p align="left">
+   <a href="https://github.com{/York-Lucis/WINSVUE-INTERVIEW-SCORE/}graphs/contributors">
+      <img src="https://contrib.rocks/image?repo=York-Lucis/WINSVUE-INTERVIEW-SCORE">
+   </a>
+</p>
+</details>
 
 ## 📞 Suporte
 
