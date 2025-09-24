@@ -123,7 +123,7 @@ export const PT_STRINGS = {
     // Company signature
     COMPANY_SIGNATURE: 'WINSVUE DEVELOPMENT',
     COMPANY_TAGLINE: 'Desenvolvimento de Software de Excelência',
-    COMPANY_COPYRIGHT: '© 2024 WINSVUE DEVELOPMENT. Todos os direitos reservados.',
+    COMPANY_COPYRIGHT: '© 2025 WINSVUE DEVELOPMENT. Todos os direitos reservados.',
     
     // Score categories for calculations
     SCORE_CATEGORIES: {

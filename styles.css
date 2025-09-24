@@ -46,7 +46,6 @@ header {
 .company-logo-icon {
     width: 60px;
     height: 60px;
-    filter: brightness(0) invert(1);
     transition: transform 0.3s ease;
 }
 
@@ -78,6 +77,12 @@ header p {
 .actions {
     padding: 30px;
     border-bottom: 1px solid #eee;
+}
+
+/* Additional notes specific styling */
+.additional-notes {
+    display: flex;
+    flex-direction: column;
 }
 
 .candidate-info:last-child,
@@ -139,6 +144,12 @@ textarea {
     min-height: 120px;
     resize: vertical;
     font-family: inherit;
+}
+
+/* Additional notes textarea specific styling */
+.additional-notes textarea {
+    width: 100%;
+    flex: 1;
 }
 
 /* Categories */
