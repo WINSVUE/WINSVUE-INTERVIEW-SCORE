@@ -7,6 +7,7 @@ O **Cartão de Avaliação de Entrevista de Desenvolvedor** é uma ferramenta we
 ### 🎯 Objetivo
 
 Esta ferramenta foi criada para:
+
 - **Padronizar** o processo de avaliação de entrevistas técnicas
 - **Documentar** de forma clara e objetiva o desempenho dos candidatos
 - **Facilitar** a comparação entre diferentes candidatos
@@ -16,7 +17,9 @@ Esta ferramenta foi criada para:
 ## ✨ Funcionalidades
 
 ### 📊 Sistema de Avaliação
+
 - **5 Categorias Principais** de avaliação:
+
   - Qualidade do Código e Boas Práticas
   - Arquitetura e Design
   - Resolução de Problemas e Lógica
@@ -28,6 +31,7 @@ Esta ferramenta foi criada para:
 - **Indicadores Visuais** de desempenho com cores baseadas na pontuação
 
 ### 💾 Gerenciamento de Dados
+
 - **Salvamento Automático** de dados do formulário
 - **Armazenamento Local** de múltiplas avaliações
 - **Exportação** para arquivos JSON
@@ -35,15 +39,24 @@ Esta ferramenta foi criada para:
 - **Histórico Completo** de avaliações anteriores
 
 ### 🎨 Interface do Usuário
+
 - **Design Responsivo** para desktop e mobile
 - **Interface Intuitiva** e fácil de usar
 - **Animações Suaves** para melhor experiência
 - **Mensagens de Feedback** para todas as operações
 - **Atalhos de Teclado** para operações rápidas
 
+### 🆕 Novas Features
+
+- **Importação Aprimorada**: Ao importar uma avaliação, a aplicação agora exibe informações detalhadas sobre:
+  - Avaliação Técnica
+  - Notas Adicionais
+- **Validação de Importação**: Verificação automática da integridade dos dados importados
+
 ## 🚀 Instalação e Configuração
 
 ### Pré-requisitos
+
 - **Python 3.x** instalado no sistema
 - **Navegador Web** moderno (Chrome, Firefox, Safari, Edge)
 - **Sistema Operacional**: Windows, macOS ou Linux
@@ -51,12 +64,14 @@ Esta ferramenta foi criada para:
 ### Instalação Rápida
 
 #### Opção 1: Usando o Arquivo Batch (Windows)
+
 1. **Baixe** todos os arquivos do projeto
 2. **Execute** o arquivo `start-server.bat`
 3. **Aguarde** a inicialização do servidor
 4. **Abra** seu navegador e acesse `http://localhost:8000`
 
 #### Opção 2: Comando Manual
+
 1. **Abra** o terminal/prompt de comando
 2. **Navegue** até a pasta do projeto:
    ```bash
@@ -69,6 +84,7 @@ Esta ferramenta foi criada para:
 4. **Acesse** `http://localhost:8000` no navegador
 
 ### Verificação da Instalação
+
 - ✅ Servidor iniciado sem erros
 - ✅ Página carrega corretamente
 - ✅ Todos os botões funcionam
@@ -77,37 +93,42 @@ Esta ferramenta foi criada para:
 ## 📖 Como Usar
 
 ### 1. Preenchimento de Dados do Candidato
+
 - **Nome do Candidato**: Campo obrigatório
 - **Data da Entrevista**: Preenchida automaticamente com a data atual
 - **Cargo**: Posição para a qual o candidato está se candidatando
 - **Entrevistador**: Nome do entrevistador responsável
 
 ### 2. Avaliação Técnica
+
 - **Marque** os critérios que o candidato atendeu
 - **Observe** a pontuação sendo calculada automaticamente
 - **Revise** cada categoria antes de finalizar
 
 ### 3. Notas Adicionais
+
 - **Adicione** observações importantes
 - **Documente** pontos fortes e áreas de melhoria
 - **Registre** impressões gerais sobre o candidato
 
 ### 4. Salvamento e Exportação
+
 - **Salve** a avaliação no armazenamento local
 - **Exporte** para arquivo JSON para backup
 - **Carregue** avaliações anteriores quando necessário
 
 ## 🎹 Atalhos de Teclado
 
-| Atalho | Ação |
-|--------|------|
-| `Ctrl + S` | Salvar pontuação |
-| `Ctrl + E` | Exportar pontuação |
+| Atalho     | Ação                           |
+| ---------- | ------------------------------ |
+| `Ctrl + S` | Salvar pontuação               |
+| `Ctrl + E` | Exportar pontuação             |
 | `Ctrl + L` | Carregar pontuações anteriores |
 
 ## 🏗️ Arquitetura Técnica
 
 ### Estrutura do Projeto
+
 ```
 wins-interview-score/
 ├── index.html              # Página principal
@@ -127,6 +148,7 @@ wins-interview-score/
 ```
 
 ### Tecnologias Utilizadas
+
 - **HTML5**: Estrutura semântica da página
 - **CSS3**: Estilos modernos e responsivos
 - **JavaScript ES6+**: Lógica da aplicação com módulos
@@ -134,6 +156,7 @@ wins-interview-score/
 - **File API**: Importação e exportação de arquivos
 
 ### Princípios de Código Limpo
+
 - ✅ **Separação de Responsabilidades**: Cada módulo tem uma função específica
 - ✅ **Princípio DRY**: Evita duplicação de código
 - ✅ **Nomes Descritivos**: Variáveis e funções com nomes claros
@@ -144,6 +167,7 @@ wins-interview-score/
 ## 🔧 Desenvolvimento
 
 ### Estrutura Modular
+
 A aplicação foi desenvolvida seguindo princípios de **código limpo** e **arquitetura modular**:
 
 - **config.js**: Configurações centralizadas
@@ -155,6 +179,7 @@ A aplicação foi desenvolvida seguindo princípios de **código limpo** e **arq
 - **app.js**: Orquestração principal da aplicação
 
 ### Adicionando Novos Critérios
+
 Para adicionar novos critérios de avaliação:
 
 1. **Edite** o arquivo `index.html` para adicionar o novo checkbox
@@ -162,6 +187,7 @@ Para adicionar novos critérios de avaliação:
 3. **Adicione** as strings de localização em `constants.js`
 
 ### Personalização
+
 - **Cores**: Modifique as variáveis CSS em `styles.css`
 - **Textos**: Atualize as strings em `constants.js`
 - **Critérios**: Adicione/remova critérios em `index.html` e `config.js`
@@ -171,34 +197,41 @@ Para adicionar novos critérios de avaliação:
 ### Problemas Comuns
 
 #### ❌ "Erro ao Carregar Aplicação"
+
 - **Causa**: Servidor não está rodando ou módulos não carregam
 - **Solução**: Verifique se o servidor está ativo em `http://localhost:8000`
 
 #### ❌ Botões não funcionam
+
 - **Causa**: JavaScript não carregou ou há erros de console
 - **Solução**: Abra o console do navegador (F12) e verifique erros
 
 #### ❌ Dados não salvam
+
 - **Causa**: LocalStorage não disponível ou bloqueado
 - **Solução**: Verifique se o navegador permite armazenamento local
 
 #### ❌ Importação não funciona
+
 - **Causa**: Arquivo JSON inválido ou corrompido
 - **Solução**: Use apenas arquivos exportados pela própria aplicação
 
 ### Logs de Debug
+
 A aplicação inclui logs detalhados no console do navegador para facilitar a depuração:
+
 - **Exportação**: Mostra dados sendo exportados
 - **Importação**: Mostra processo de restauração
 - **Checkboxes**: Detalha o processo de correspondência
 
 ## 📄 Licença
 
-Este projeto foi desenvolvido pela **WINSVUE DEVELOPMENT** e está disponível para uso interno e educacional.
+Este projeto foi desenvolvido pela **WINS GAMES** e está disponível para uso interno e educacional.
 
 ## 🤝 Contribuição
 
 Para contribuir com o projeto:
+
 1. **Fork** o repositório
 2. **Crie** uma branch para sua feature
 3. **Commit** suas mudanças
@@ -208,11 +241,11 @@ Para contribuir com o projeto:
 ## 📞 Suporte
 
 Para suporte técnico ou dúvidas:
-- **Email**: suporte@winsvue.com
+
+- **Email**: dev@winsvue.gg
 - **Documentação**: Consulte este README
 - **Issues**: Abra uma issue no repositório
 
 ---
 
-**WINSVUE DEVELOPMENT** - Desenvolvimento de Software de Excelência
-© 2024 WINSVUE DEVELOPMENT. Todos os direitos reservados.
+**WINS GAMES** - © 2025 WINS GAMES. Todos os direitos reservados.
