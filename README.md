@@ -247,7 +247,7 @@ Para contribuir com o projeto:
 <summary>Gráfico de Contribuidores</summary>
 <br>
 <p align="left">
-   <a href="https://github.com{/York-Lucis/WINSVUE-INTERVIEW-SCORE/}graphs/contributors">
+   <a href="https://github.com/York-Lucis/WINSVUE-INTERVIEW-SCORE/graphs/contributors">
       <img src="https://contrib.rocks/image?repo=York-Lucis/WINSVUE-INTERVIEW-SCORE">
    </a>
 </p>
